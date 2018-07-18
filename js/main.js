@@ -146,6 +146,23 @@ resetRestaurants = (restaurants) => {
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
+  ul.setAttribute('aria-live', 'off');
+  if(restaurants.length === 0) {
+    ul.setAttribute('aria-live', 'polite');
+    const li = document.createElement('li');
+    const image = document.createElement('img');
+    image.className = 'restaurant-img';
+    image.src = 'img/SorryNoResults.png';
+    image.setAttribute('alt', '');
+    li.append(image);
+
+    const message = document.createElement('h1');
+    message.innerHTML = 'Sorry there are no restaurants in the selected category.';
+    message.setAttribute('style', 'text-align: center;');
+    li.append(message);
+
+    ul.append(li);
+  }
   restaurants.forEach(restaurant => {
     ul.append(createRestaurantHTML(restaurant));
   });
