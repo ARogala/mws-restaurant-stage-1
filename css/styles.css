@@ -238,6 +238,10 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+#restaurants-list li a:focus {
+  outline: 4px solid black;
+}
+
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
