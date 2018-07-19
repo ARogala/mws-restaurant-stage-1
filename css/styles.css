@@ -125,6 +125,19 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
+.leaflet-marker-pane img:focus {
+  outline: 3px solid black;
+}
+
+.leaflet-control-zoom a:focus {
+  outline: 3px solid black;
+}
+
+.leaflet-bottom a:focus {
+  outline: 2px solid black;
+}
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
