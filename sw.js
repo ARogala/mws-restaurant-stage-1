@@ -4,10 +4,12 @@
  * @date    2018-07-24 07:18:52
  * @version $Id$
  */
+
 let staticCacheName = 'restaurant-reviews-v1';
 let urlsToCache = [
 	'/',
 	'index.html',
+	'restaurant.html',
 	'restaurant.html?id=1',
 	'restaurant.html?id=2',
 	'restaurant.html?id=3',
@@ -69,4 +71,5 @@ self.addEventListener('fetch', function(event) {
 		})
 	);
 });
+
 
