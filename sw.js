@@ -7,7 +7,6 @@
 let staticCacheName = 'restaurant-reviews-v1';
 let urlsToCache = [
 	'/',
-	'sw_registration.js',
 	'index.html',
 	'restaurant.html?id=1',
 	'restaurant.html?id=2',
